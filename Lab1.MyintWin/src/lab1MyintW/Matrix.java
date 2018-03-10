@@ -1,4 +1,4 @@
-package lab1_Myint_W;
+package lab1MyintW;
 
 
 public class Matrix {
@@ -28,9 +28,7 @@ public class Matrix {
 			}
 			matrixString += "\n \n";
 		}
-		if(e != null) {
-			 return "ball";
-		}
+		
 		return matrixString;
 	}
 	
@@ -47,7 +45,7 @@ public class Matrix {
 		           }
 		       }
 		}else {
-			throw new RuntimeException("Illegal matrix dimensions.");
+			throw new RuntimeException("Illegal matrix dimensions because two matrices should have the same dimensions to add.");
 		}
 	   return addMatrix;
 	}
@@ -64,7 +62,7 @@ public class Matrix {
 	           }
 	       }
 		}else {
-			throw new RuntimeException("Illegal matrix dimensions.");
+			throw new RuntimeException("Illegal matrix dimensions because two matrices should have the same dimensions to subtract.");
 		}
 	    return subMatrix;
 	}
@@ -83,7 +81,7 @@ public class Matrix {
 	           }
 	       }
 		}else {
-			throw new RuntimeException("Illegal matrix dimensions.");
+			throw new RuntimeException("Illegal matrix dimensions because Matrix A must have the same number of columns as the rows in Matrix B to multiply.");
 		}
 	   return multMatrix;
 	}
