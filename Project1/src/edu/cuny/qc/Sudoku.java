@@ -252,48 +252,37 @@ public class Sudoku extends JFrame implements ActionListener {
 		// is a Sudoku.");
 
 		// seprate into 3x3 matrix
-		int[][][] three_three = new int[9][3][3];
-		int l = -1;
+
 		for (int i = 0; i < 9; i += 3) { // 9 row
 			for (int j = 0; j < 9; j += 3) { // 9 col
-				l++;
-				int p = -1;
-				int threeSquare = 0;
+				int[] allNumberInARow = new int[9];
+				int a = 0;
+				// 3x3 matrix to one row array
 				for (int k = i; k < i + 3; k++) { // 3 row
-					int q = 0;
-					p++;
 					for (int h = j; h < j + 3; h++) { // 3 col
-						threeSquare += Integer.parseInt(gridButton[k][h].getText());
-						three_three[l][p][q] = Integer.parseInt(gridButton[k][h].getText());
-						q++;
+						allNumberInARow[a] = Integer.parseInt(gridButton[k][h].getText());
+						a++;
 					}
 				}
-			}
-		}
+				// check the duplicate number in array
+				// if duplicate return false
+				for (int h = 0; h < allNumberInARow.length-1; h++)
+		        {
+		            for (int t = h+1; t < allNumberInARow.length; t++)
+		            {
+		                if ((allNumberInARow[h] == allNumberInARow[t]) && (h != t))
+		                {
+		                    System.out.println("Duplicate Element : "+allNumberInARow[t]);
+		                }
+		                if (allNumberInARow[h] < 0) {
+							return false;
+						}
 
-		for (int i = 0; i < three_three.length - 1; i++) {
-			int[] allNumberInARow = new int[9];
-			int a = 0;
-			// 3x3 matrix to one row array
-			for (int j = 0; j < 3; j++) {
-				for (int k = 0; k < 3; k++) {
-					allNumberInARow[a] = three_three[i][j][k];
-					a++;
-				}
+		            }
+		        }
+				
+			}
 
-			}
-			// check the duplicate number in array
-			// if duplicate return false
-			for (int g = 0; g < allNumberInARow.length - 1; g++) {
-				for (int j = g + 1; j < allNumberInARow.length; j++) {
-					if ((allNumberInARow[g] == allNumberInARow[j]) && (g != j)) {
-						return false;
-					}
-					if (allNumberInARow[g] < 0) {
-						return false;
-					}
-				}
-			}
 		}
 		// check duplicate of horizontal and vertical row
 		// if duplicate return false
@@ -302,7 +291,8 @@ public class Sudoku extends JFrame implements ActionListener {
 				int source = Integer.parseInt(gridButton[q][r].getText());
 				for (int h = 0; h < r; h++) {
 					if (source == Integer.parseInt(gridButton[q][h].getText())) {
-						return false;}
+						return false;
+					}
 				}
 				for (int s = 0; s < q; s++) {
 					if (source == Integer.parseInt(gridButton[s][r].getText())) {
