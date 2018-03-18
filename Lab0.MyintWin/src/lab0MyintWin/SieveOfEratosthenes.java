@@ -1,5 +1,5 @@
 
-package lab0;
+package lab0MyintWin;
 
 
 import java.util.Scanner;
