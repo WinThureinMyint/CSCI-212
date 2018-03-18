@@ -42,25 +42,18 @@ public class SieveOfEratosthenes {
 		arrayPrint(numbers);
 		System.out.println();
 		System.out.print("The Prime in the range 2 to "+range+" : ");
-		arrayPrint(primeNumber(numbers));
+		arrayPrint(primeNumber(numbers,range));
 		System.out.println();
 		System.out.print("End of Program");
 	}
-	private static int[] primeNumber(int[] numbers) {
-		boolean i = true; 
-		int p=2;
-		while(i==true) { 
-			if(p<=Math.sqrt(numbers.length)) {
-				for(int a=1;a<numbers.length;a++) {
-					if(numbers[a]%p == 0) {
-						if(numbers[a] != p) {
-							numbers[a]=0;
-						}
+	private static int[] primeNumber(int[] numbers,int range) {
+		for(int i=2;i<=Math.sqrt(range);i++) {	 
+			for(int j=i*i;j<=range;j+=i) {
+				for(int a=0;a<numbers.length;a++) {
+					if(numbers[a] == j) {
+						numbers[a]=0;
 					}
 				}
-				p++;
-			}else {
-				i = false;
 			}
 		}
 		return numbers;
@@ -68,7 +61,7 @@ public class SieveOfEratosthenes {
 	static void arrayPrint(int[] numbers) {
 		for(int i=1;i<numbers.length;i++) {	
 			if(numbers[i] != 0) {
-				System.out.print(numbers[i]+" ,");	
+				System.out.print(numbers[i]+" ");	
 			}
 		}
 	}
