@@ -47,6 +47,58 @@
 	</section>
 	<section name="CallHierarchySearchScope">
 	</section>
+	<section name="javadoc">
+		<item value="public" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="/Users/harrychan/eclipse-workspace/Lab4/javadoc.xml" key="antpath"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
+		<item value="9" key="source"/>
+		<item value="true" key="version"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="/Users/harrychan/eclipse-workspace/Lab4/doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+			<section name="Lab2.MyintWin">
+				<item value="/Users/harrychan/eclipse-workspace/Lab2.MyintWin/javadoc.xml" key="antpath"/>
+				<item value="/Users/harrychan/eclipse-workspace/Lab2.MyintWin/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Lab0.MyintWin">
+				<item value="/Users/harrychan/eclipse-workspace/Lab0.MyintWin/javadoc.xml" key="antpath"/>
+				<item value="/Users/harrychan/eclipse-workspace/Lab0.MyintWin/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Lab4.MyintWin">
+				<item value="/Users/harrychan/eclipse-workspace/Lab4/javadoc.xml" key="antpath"/>
+				<item value="/Users/harrychan/eclipse-workspace/Lab4/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Lab3a.MyintWin">
+				<item value="/Users/harrychan/eclipse-workspace/Lab3a.MyintWin/javadoc.xml" key="antpath"/>
+				<item value="/Users/harrychan/eclipse-workspace/Lab3a.MyintWin/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Lab1.MyintWin">
+				<item value="/Users/harrychan/eclipse-workspace/Lab1.MyintWin/javadoc.xml" key="antpath"/>
+				<item value="/Users/harrychan/eclipse-workspace/Lab1.MyintWin/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Project1.MyintWin">
+				<item value="/Users/harrychan/eclipse-workspace/Project1/javadoc.xml" key="antpath"/>
+				<item value="/Users/harrychan/eclipse-workspace/Project1/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+		</section>
+	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="Comments"/>
@@ -60,6 +112,13 @@
 		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="JavadocWizardDialog">
+		<item value="600" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="534" key="DIALOG_HEIGHT"/>
+		<item value="420" key="DIALOG_X_ORIGIN"/>
+		<item value="44" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

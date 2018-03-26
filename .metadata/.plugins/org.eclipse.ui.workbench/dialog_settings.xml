@@ -22,6 +22,7 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/harrychan/Documents/csci212.Myint.Lab4.zip"/>
 			<item value="/Users/harrychan/Documents/csci212.Myint.Lab3a.zip"/>
 			<item value="/Users/harrychan/Documents/csci212.Myint.Lab0.zip"/>
 			<item value="/Users/harrychan/Documents/csci212.Myint.lab0"/>
