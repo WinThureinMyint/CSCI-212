@@ -8,17 +8,17 @@ public class Queue<T> implements QueueADT<T> {
 	private static final int MAX_SIZE = 100;
 
 	public Queue() {
-		data = (T[]) new Object[MAX_SIZE];
-		size = 0;
-		head = 0;
-		tail = 0;
+		this.data = (T[]) new Object[MAX_SIZE];
+		this.size = 0;
+		this.head = 0;
+		this.tail = -1;
 	}
 
 	public Queue(int size) {
-		data = (T[]) new Object[size];
-		size = 0;
-		head = 0;
-		tail = 0;
+		this.data = (T[]) new Object[size];
+		this.size = 0;
+		this.head = 0;
+		this.tail = -1;
 	}
 	// public <T> deque(){
 	// T[] x=(T[]) data[head];
@@ -28,60 +28,62 @@ public class Queue<T> implements QueueADT<T> {
 	// }
 
 	public boolean isFull() {
-		return size == data.length;
+		return (size == data.length);
 	}
 
 	public boolean isEmpty() {
-		return size == 0;
+		return (size == 0);
+	}
+
+	public void makeEmpty() throws QueueException{
+		if (isEmpty())
+			throw new QueueException("Queue is emptied.");
+		this.size = 0;
+		this.head = 0;
+		this.tail = -1;
+			
 	}
 
 	@Override
 	public void enqueue(T d) throws QueueException {
 		// enqueue -> return ((tail+1)%1/data.length) != 0; \\ head may be
-		if(isEmpty()) {
-			throw new QueueException("Queue is Empty");
+		if (isFull()) {
+			throw new QueueException("Maximum number of items that can be stored is " + data.length);
+		} else {
+			head = 0;
+			data[(tail + 1) % data.length] = d;
+			tail++;
+			size++;
 		}
-		if(isFull()) {
-			throw new QueueException("Maximum number of items that can be stored is 100");
-		}
-		data[(tail+1)%data.length]=d;
-		size++;
 	}
 
 	@Override
 	public T dequeue() throws QueueException {
-		
-		if(isEmpty()) {
+
+		if (isEmpty()) {
 			throw new QueueException("Queue is Empty");
 		}
-		if(isFull()) {
-			throw new QueueException("Maximum number of items that can be stored is 100");
-		}
-		T[] x = (T[]) data[head];
+		T x = front();
 		head = (head + 1) % data.length;
 		size--;
-		return (T) x;
+		return x;
 	}
 
 	@Override
 	public T front() throws QueueException {
-		if(isEmpty()) {
+		if (isEmpty()) {
 			throw new QueueException("Queue is Empty");
 		}
-		if(isFull()) {
-			throw new QueueException("Maximum number of items that can be stored is 100");
-		}
+
 		return data[head];
 	}
 
 	@Override
 	public T rear() throws QueueException {
-		if(isEmpty()) {
+		if (isEmpty()) {
 			throw new QueueException("Queue is Empty");
 		}
-		if(isFull()) {
-			throw new QueueException("Maximum number of items that can be stored is 100");
-		}
+
 		return data[tail];
 	}
 
@@ -89,4 +91,24 @@ public class Queue<T> implements QueueADT<T> {
 	public int getSize() {
 		return size;
 	}
+
+	@Override
+	public String toString() {
+		if (isEmpty()) {
+			return "Queue is Empty! Maximum number of items that can be stored is " + data.length;
+		} else {
+
+			String str = "The number of items in the queue is " + size + "\n--\n";
+
+			// for (int i = head; i < ((tail + 1) % data.length); i++) {
+			// str = str + "The Queue contains the following: " + data[i].toString() + "\n";
+			// }
+			for (int i = size - 1; i >= 0; i--) {
+				str = str + "The Queue contains the following: " + data[i].toString() + "\n";
+			}
+			return str + "--\n";
+		}
+
+	}
+
 }
