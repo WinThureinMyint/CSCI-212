@@ -103,7 +103,8 @@ public class Stack<T> implements StackADT<T> {
 	/**
 	 * Returns the object 
 	 * @return if there is an object in Array
-	 * @throws StackEmptyException
+	 * @throws StackEmptyException - show error when stack is empty
+	 * @param i The array index
 	 */
 	public T getData(int i) throws StackEmptyException {
 		if(isEmpty()) {
@@ -113,7 +114,6 @@ public class Stack<T> implements StackADT<T> {
 	}
 	/**
 	 * Clear all the data from data field and size field.
-	 * @return no return
 	 */
 	public void clearData() {
 		this.data = (T[]) new Object[MAX_SIZE];

@@ -1,6 +1,27 @@
 package project2MyintW;
 
-
+/**
+ * <p>
+ * Title: StackADT class
+ * </p>
+ *
+ * <p>
+ * Description :This Stack class represents a last-in-first-out (LIFO) stack of objects.
+ * The usual push and pop operations are provided, as well as a method to peek 
+ * at the top item on the stack, and a method to test for whether the stack is empty.
+ * When a stack is first created, it contains no items.
+ * </p>
+ * <p>
+ * Copyright: Copyright (c) 2018
+ * </p>
+ *
+ * <p>
+ * College: Queens College
+ * </p>
+ *
+ * @author Win Thurein Myint
+ * @version 1.0
+ */
 
 public interface StackADT<T> {
 	/**
