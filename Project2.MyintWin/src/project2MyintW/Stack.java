@@ -1,7 +1,10 @@
 package project2MyintW;
-
-
-
+/**
+ * This Stack class represents a last-in-first-out (LIFO) stack of objects.
+ * The usual push and pop operations are provided, as well as a method to peek 
+ * at the top item on the stack, and a method to test for whether the stack is empty.
+ * When a stack is first created, it contains no items.
+ */
 public class Stack<T> implements StackADT<T> {
 	/**
 	 * The array into which the objects of the stack are stored.

@@ -116,6 +116,11 @@ class CalculatorFrame extends JFrame implements ActionListener {
 		return true;
 	}
 
+	/**
+	 * Convert infix which is enter by the user to the postfix to calculate
+	 * @return Postfix of the user input(infix)
+	 * @note An infix expression is one in which an operator is positioned between its two operands. A postfix expression places the operators after its operands.
+	 */
 	public String infixToPostfix() {
 		String postFix = "3 2 * 1 5 * -";
 		Stack<String> delimStack = new Stack<String>();
@@ -183,98 +188,71 @@ class CalculatorFrame extends JFrame implements ActionListener {
 		return postFix;
 
 	}
-	// (12-3)*2+3*4
-	// while (strToken.hasMoreTokens()) {
-	// String token = strToken.nextToken();
-	// if (isNumeric(token)) {
-	//
-	// }
-	// switch (token) {
-	//
-	// case "(":
-	// delimStack.push(token);
-	// case ")":
-	// try {
-	// while (!delimStack.peek().equals("(")) {
-	// postFix += delimStack.pop() + " ";
-	// }
-	// delimStack.pop();
-	// } catch (StackEmptyException see) {
-	// see.getMessage();
-	// }
-	// case "*":
-	// try {
-	// delimStack.peek();
-	// postFix += delimStack.pop();
-	// delimStack.push(token);
-	// } catch (StackEmptyException e) {
-	// // TODO Auto-generated catch block
-	// delimStack.push(token);
-	// }
-	// case "/":
-	// try {
-	// delimStack.peek();
-	// postFix += delimStack.pop();
-	// delimStack.push(token);
-	// } catch (StackEmptyException e) {
-	// // TODO Auto-generated catch block
-	// delimStack.push(token);
-	// }
-	// case "+":
-	// try {
-	// delimStack.peek();
-	// while (delimStack.peek().contains("*/+-")) {
-	// postFix += delimStack.pop() + " ";
-	// }
-	// } catch (StackEmptyException e) {
-	// // TODO Auto-generated catch block
-	// delimStack.push(token);
-	//
-	// }
-	// case "-":
-	// try {
-	// delimStack.peek();
-	// while (delimStack.peek().contains("*/+-")) {
-	// postFix += delimStack.pop() + " ";
-	// }
-	// } catch (StackEmptyException e) {
-	// // TODO Auto-generated catch block
-	// delimStack.push(token);
-	//
-	// }
-	// default:
-	//// try {
-	//// postFix += delimStack.pop();
-	////
-	//// } catch (StackEmptyException e) {
-	//// // TODO Auto-generated catch block
-	//// e.printStackTrace();
-	//// }
-	// }
-
-	// Code steps 1-6 here
-
-	/*
-	 * Stack <String> s = new Stack<>(); String expreession = jtfInfix.gettesxt();
-	 * String delims = "+-* /() ";
-	 * 
-	 * StringToknizer strToken=new StringTokenizer(expression, delims, true); String
-	 * postFix=""; while(strToken.hasMoreTokens()){ String
-	 * token=strToken.nextToken(); //Code steps 1-6 here } code END here (Stack is
-	 * not empty)
-	 * 
+	
+	/**
+	 * Calculate the problem which is enter by the user
+	 * @return The calculated number of the problem
 	 */
-
 	public String calculate() {
-		String ans = "1";
-		/*
-		 * Stack <String> s = new Stack<>(); String expreession = jtfInfix.gettesxt();
-		 * String delims = "+-* /() ";
-		 * 
-		 * StringToknizer strToken=new StringTokenizer(expression, delims, true); String
-		 * postFix=""; while(strToken.hasMoreTokens()){
-		 * 
-		 */
+		Stack<String> calculate = new Stack<String>();
+		String ans = ""; // For the answer
+		int a, b, c;
+		String postfix = infixToPostfix(); 
+		StringTokenizer strToken = new StringTokenizer(postfix, " ");
+		while (strToken.hasMoreTokens()) {
+			String token = strToken.nextToken();
+			switch (token) {
+			case "+":
+				try {
+					a = Integer.parseInt(calculate.pop());
+					b = Integer.parseInt(calculate.pop());
+					c = a + b;
+					calculate.push(c + "");
+				} catch (StackEmptyException se) {
+					System.out.println("Stack is empty.");
+				}
+				break;
+			case "-":
+				try {
+					a = Integer.parseInt(calculate.pop());
+					b = Integer.parseInt(calculate.pop());
+					c = b - a;
+					calculate.push(c + "");
+				} catch (StackEmptyException se) {
+					System.out.println("Stack is empty.");
+				}
+				break;
+			case "*":
+				try {
+					a = Integer.parseInt(calculate.pop());
+					b = Integer.parseInt(calculate.pop());
+					c = a * b;
+					calculate.push(c + "");
+				} catch (StackEmptyException se) {
+					System.out.println("Stack is empty.");
+				}
+				break;
+			case "/":
+				try {
+					a = Integer.parseInt(calculate.pop());
+					b = Integer.parseInt(calculate.pop());
+					c = b / a;
+					calculate.push(c + "");
+				} catch (StackEmptyException se) {
+					System.out.println("Stack is empty.");
+				}
+				break;
+			default:
+				calculate.push(token); //Number push to stack
+				break;
+			}
+		}
+
+		try {
+			ans = calculate.pop();
+		} catch (StackEmptyException see) {
+			see.getMessage();
+		}
 		return ans;
 	}
 
