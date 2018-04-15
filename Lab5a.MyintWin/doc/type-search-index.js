@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"lab5aMyintW","l":"Lab5aApp"},{"p":"lab5aMyintW","l":"Queue"},{"p":"lab5aMyintW","l":"QueueADT"},{"p":"lab5aMyintW","l":"QueueException"}]

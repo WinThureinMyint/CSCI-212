@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"project2MyintW","l":"Stack"},{"p":"project2MyintW","l":"StackADT"},{"p":"project2MyintW","l":"StackEmptyException"},{"p":"project2MyintW","l":"StackFullException"}]

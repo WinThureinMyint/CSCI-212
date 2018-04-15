@@ -1,23 +1,5 @@
 package lab5aMyintW;
-/**
- * <p>
- * Title: Lab5aApp Class
- * </p>
- *
- * <p>
- * Description : This is a main method calass. Create Queue object and test the queue generic class. 
- * </p>
- * <p>
- * Copyright: Copyright (c) 2018
- * </p>
- *
- * <p>
- * College: Queens College
- * </p>
- *
- * @author Win Thurein Myint
- * @version 1.0
- */
+
 public class Lab5aApp {
 
 	public static void main(String[] args) {

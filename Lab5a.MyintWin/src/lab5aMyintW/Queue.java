@@ -1,50 +1,12 @@
 package lab5aMyintW;
-/**
- * <p>
- * Title: Queue Class
- * </p>
- *
- * <p>
- * Description :A queue supports the insert and remove operations using a
- * first-in first-out (FIFO) discipline. By convention, we name the queue insert
- * operation enqueue and the remove operation dequeue.
- * </p>
- * <p>
- * Copyright: Copyright (c) 2018
- * </p>
- *
- * <p>
- * College: Queens College
- * </p>
- *
- * @author Win Thurein Myint
- * @version 1.0
- */
+
 public class Queue<T> implements QueueADT<T> {
-	/**
-	 * The array into which the objects of the queue are stored.
-	 */
 	private T[] data;
-	/**
-	 * The number of objects in this queue.
-	 */
 	private int size;
-	/**
-	 * index # of the front of the queue
-	 */
 	private int head; // index # of the front of the queue
-	/**
-	 * index # of the back of the queue
-	 */
 	private int tail; // index # of the back of the queue
-	/**
-	 * The default capacity of this queue.
-	 */
 	private static final int MAX_SIZE = 100;
 
-	/**
-	 * Constructs a new queue with capacity for 100 objects
-	 */
 	public Queue() {
 		this.data = (T[]) new Object[MAX_SIZE];
 		this.size = 0;
@@ -52,58 +14,36 @@ public class Queue<T> implements QueueADT<T> {
 		this.tail = -1;
 	}
 
-	/**
-	 * Constructs a new queue with capacity specified by user
-	 * 
-	 * @param size
-	 *            the size of the queue
-	 */
 	public Queue(int size) {
 		this.data = (T[]) new Object[size];
 		this.size = 0;
 		this.head = 0;
 		this.tail = -1;
 	}
+	// public <T> deque(){
+	// T[] x=(T[]) data[head];
+	// head = (head+1) % data.length;
+	// size--;
+	// return x;
+	// }
 
-	/**
-	 * Returns the number of objects on the queue.
-	 * 
-	 * @return The number of objects on the queue.
-	 */
 	public boolean isFull() {
 		return (size == data.length);
 	}
 
-	/**
-	 * Tests if this queue is full.
-	 * 
-	 * @return <i>true</i> if and only if this queue is full; <i>false</i>
-	 *         otherwise.
-	 */
 	public boolean isEmpty() {
 		return (size == 0);
 	}
 
-	/**
-	 * Reset the data of queue to empty.
-	 * 
-	 * @throws QueueException - throw an exception when the queue is empty
-	 */
-	public void makeEmpty() throws QueueException {
+	public void makeEmpty() throws QueueException{
 		if (isEmpty())
 			throw new QueueException("Queue is emptied.");
 		this.size = 0;
 		this.head = 0;
 		this.tail = -1;
-
+			
 	}
 
-	/**
-	 * Add an object to the queue
-	 * 
-	 * @param d The object to be stored onto the Queue.
-	 * @throws QueueException - if this Queue is full
-	 */
 	@Override
 	public void enqueue(T d) throws QueueException {
 		// enqueue -> return ((tail+1)%1/data.length) != 0; \\ head may be
@@ -117,13 +57,6 @@ public class Queue<T> implements QueueADT<T> {
 		}
 	}
 
-	/**
-	 * Removes the object at the head of this queue.
-	 * 
-	 * @return The object at the head of the queue.
-	 * @throws QueueException
-	 *             - if this queue is empty
-	 */
 	@Override
 	public T dequeue() throws QueueException {
 
@@ -136,13 +69,6 @@ public class Queue<T> implements QueueADT<T> {
 		return x;
 	}
 
-	/**
-	 * Returns the object at the head of this queue without removing it.
-	 * 
-	 * @return The object at the head of the queue.
-	 * @throws QueueException
-	 *             - if this queue is full
-	 */
 	@Override
 	public T front() throws QueueException {
 		if (isEmpty()) {
@@ -152,13 +78,6 @@ public class Queue<T> implements QueueADT<T> {
 		return data[head];
 	}
 
-	/**
-	 * Returns the object at the tail of this queue without removing it.
-	 * 
-	 * @return The object at the tail of the queue.
-	 * @throws QueueException
-	 *             - if this queue is full
-	 */
 	@Override
 	public T rear() throws QueueException {
 		if (isEmpty()) {
@@ -168,11 +87,6 @@ public class Queue<T> implements QueueADT<T> {
 		return data[tail];
 	}
 
-	/**
-	 * Returns the number of objects on the queue.
-	 * 
-	 * @return The number of objects on the queue.
-	 */
 	@Override
 	public int getSize() {
 		return size;
