@@ -6,4 +6,12 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="lab5aMyintW.QueueException"/>
+    <fullyQualifiedTypeName name="project2MyintW.StackADT"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
+    <fullyQualifiedTypeName name="cs212lib.QueueEmptyException"/>
+    <fullyQualifiedTypeName name="cs212lib.QueueFullException"/>
+    <fullyQualifiedTypeName name="cs212lib.Queue"/>
+    <fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
 </qualifiedTypeNameHistroy>
