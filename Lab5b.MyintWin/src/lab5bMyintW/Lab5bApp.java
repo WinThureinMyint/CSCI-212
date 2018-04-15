@@ -75,29 +75,30 @@ public class Lab5bApp extends Thread{
 		
 		// TODO: create a loop based on the number of consumer threads
 		//		for each JFrame and PictPanel object
-		for(int i=1;i!=pictureFrame.length;i++){
+		int thread = 1;
+		while(thread!=pictureFrame.length){
 			// TODO: create an instance of JFrame with the title
 			//	 Thread and the number of the thread example: (Thread 1)
 			// and store it in the array
-			String tName = "Thread" + i;
+			String tName = "Thread" + thread;
 			JFrame threadName = new JFrame(tName);
-			pictureFrame[i] = threadName;
+			pictureFrame[thread] = threadName;
 			
 			// TODO: use the setSize method to set the JFrame’s size to 200 by 200
-			pictureFrame[i].setSize(200,200);
+			pictureFrame[thread].setSize(200,200);
 			// Set X,Y coordinate of upper left corner of the frame
-			pictureFrame[i].setLocation(80 * i, 80 * i);
+			pictureFrame[thread].setLocation(80 * thread, 80 * thread);
 
 			// TODO: create an instance of PictPanel and store it in the panel
 			// array
 			PictPanel newPanel = new PictPanel(threadName); 
-			panel[i] = newPanel;
+			panel[thread] = newPanel;
 			
 			// add the panel to the frame
-			pictureFrame[i].getContentPane().add(panel[i]);
+			pictureFrame[thread].getContentPane().add(panel[thread]);
 
 			// Use the setVisible method to show the frame
-			pictureFrame[i].setVisible(true);
+			pictureFrame[thread].setVisible(true);
 		}
 
 		// TODO: create an instance of ProducerThread
