@@ -1,25 +1,12 @@
-<<<<<<< HEAD
 INDEX VERSION 1.130+/Users/harrychan/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
-1245406245.index
-3816542703.index
-1828089775.index
 3813291043.index
-2784562971.index
-3771221347.index
+1245406245.index
 2701975334.index
-2886905697.index
-139225836.index
-201326176.index
 222218014.index
-=======
-INDEX VERSION 1.130+C:\Users\Harry\Documents\GitHub\CSCI-212\.metadata\.plugins\org.eclipse.jdt.core
-922896824.index
-4100687094.index
-4159305142.index
-3231029445.index
-871864709.index
-3694523067.index
-167827284.index
-484331189.index
-3323497099.index
->>>>>>> a974253fb2b24717a7b0db2954de587407fc5a4b
+2784562971.index
+2886905697.index
+201326176.index
+3771221347.index
+3816542703.index
+139225836.index
+1828089775.index
