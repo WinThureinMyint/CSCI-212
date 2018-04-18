@@ -22,7 +22,7 @@ public class Lab6aApp {
 		Product[] products = null; 
 		try {
 			Class.forName("org.sqlite.JDBC");
-			Connection c = DriverManager.getConnection("jdbc:sqlite:I:/aabreu/products.db");
+			Connection c = DriverManager.getConnection("jdbc:sqlite:products.db");
 			c.setAutoCommit(false);
 			System.out.println("Opened database successfully");			
 
