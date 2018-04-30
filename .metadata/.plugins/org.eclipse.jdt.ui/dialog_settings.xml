@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<item value="0" key="CallHierarchyViewPart.call_mode"/>
 	<item value="2" key="CallHierarchyViewPart.field_mode"/>
-	<item value="/Users/harrychan/eclipse-workspace/Jar File" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/Users/harrychan/eclipse-workspace/Lab5b.MyintWin/lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="3" key="CallHierarchyViewPart.orientation"/>
 	<item value="500" key="CallHierarchyViewPart.ratio1"/>
 	<item value="1" key="SearchScopeActionGroup.search_scope_type"/>
@@ -22,6 +22,13 @@
 		<item value="true" key="SearchInAppLibs"/>
 		<item value="true" key="SearchInJRE"/>
 		<item value="true" key="SearchInSources"/>
+	</section>
+	<section name="DialogBounds_SuperInterfaceSelectionDialog">
+		<item value="356" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="456" key="DIALOG_HEIGHT"/>
+		<item value="90" key="DIALOG_X_ORIGIN"/>
+		<item value="18" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>

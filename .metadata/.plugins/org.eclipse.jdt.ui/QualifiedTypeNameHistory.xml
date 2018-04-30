@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="lab5aMyintW.QueueException"/>
     <fullyQualifiedTypeName name="project2MyintW.StackADT"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
@@ -14,4 +13,17 @@
     <fullyQualifiedTypeName name="cs212lib.QueueFullException"/>
     <fullyQualifiedTypeName name="cs212lib.Queue"/>
     <fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
+    <fullyQualifiedTypeName name="lab6a.UnorderedArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="lab6a.Product"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+    <fullyQualifiedTypeName name="lab6b.OrderedArrayList"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="lab6b.Packet"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
 </qualifiedTypeNameHistroy>
