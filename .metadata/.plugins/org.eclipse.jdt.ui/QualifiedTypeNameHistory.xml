@@ -10,14 +10,11 @@
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
     <fullyQualifiedTypeName name="cs212lib.QueueEmptyException"/>
-    <fullyQualifiedTypeName name="cs212lib.QueueFullException"/>
-    <fullyQualifiedTypeName name="cs212lib.Queue"/>
     <fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
     <fullyQualifiedTypeName name="lab6a.UnorderedArrayList"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="lab6a.Product"/>
     <fullyQualifiedTypeName name="java.lang.Package"/>
-    <fullyQualifiedTypeName name="lab6b.OrderedArrayList"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
@@ -26,4 +23,8 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="lab6b.Packet"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="lab6b.OrderedArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="cs212lib.QueueFullException"/>
+    <fullyQualifiedTypeName name="cs212lib.Queue"/>
 </qualifiedTypeNameHistroy>
