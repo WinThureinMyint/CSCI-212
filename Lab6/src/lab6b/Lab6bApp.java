@@ -44,8 +44,8 @@ public class Lab6bApp {
 			str += orderArrayList.get(i).getMessage();
 		}
 		orderArrayList.clear();
-
-		System.out.print(String.format("%n", str));
+		
+		System.out.print(str);
 		
 	}
 
