@@ -62,6 +62,7 @@ public class Lab5aApp {
 		}
 
 		// Question 12
+		System.out.println("Question 12");
 		try {
 			//empty queue
 			queueDef.dequeue();
