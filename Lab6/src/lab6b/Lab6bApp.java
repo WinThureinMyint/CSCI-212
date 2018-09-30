@@ -7,7 +7,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+/**
+ * <p>
+ * Title:orderedArrayList  
+ * </p>
+ * 
+ * <p>
+ * Description: Writing	and	Testing	the	OrderedArrayList	Class
+ * </p>
+ * 
+ * <p>
+ * Copyright: Copyright (c) 2018
+ * </p>
+ * 
+ * @author Win Thurein Myint
+ *
+ */
 public class Lab6bApp {
 	public static void main(String args[]) {
 		OrderedArrayList<Packet> orderArrayList = new OrderedArrayList<>();

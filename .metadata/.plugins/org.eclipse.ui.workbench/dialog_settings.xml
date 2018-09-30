@@ -5,8 +5,8 @@
 		<item value="45" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="675" key="dialogHeight"/>
-		<item value="1200" key="dialogWidth"/>
+		<item value="563" key="dialogHeight"/>
+		<item value="900" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -16,18 +16,27 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="PreferencesImportWizard">
+	</section>
 	<section name="NewWizardAction">
 	</section>
 	<section name="ImportExportAction">
-		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
 		</list>
+	</section>
+	<section name="PreferencesExportWizard">
 	</section>
 	<section name="ZipFileExportWizard">
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/harrychan/Documents/csci212.Myint.lab8.zip"/>
+			<item value="/Users/harrychan/Documents/csci212.Myint.lab7.zip"/>
+			<item value="/Users/harrychan/Documents/csci212.Myint.lab6.zip"/>
+			<item value="/Users/harrychan/Documents/csci212.Myint.lab6a.zip"/>
 			<item value="/Users/harrychan/Documents/csci212.Myint.lab5b.zip"/>
 			<item value="/Users/harrychan/Documents/csci212.Myint.Project2.zip"/>
 			<item value="/Users/harrychan/Documents/csci212.Myint.Lab5a.zip"/>
