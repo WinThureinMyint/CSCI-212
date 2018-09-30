@@ -2,7 +2,15 @@
 <section name="Workbench">
 	<item value="0" key="CallHierarchyViewPart.call_mode"/>
 	<item value="2" key="CallHierarchyViewPart.field_mode"/>
+<<<<<<< HEAD
 	<item value="/Users/harrychan/eclipse-workspace/Jar File" key="org.eclipse.jdt.ui.lastextjar"/>
+=======
+<<<<<<< HEAD
+	<item value="C:\Users\Harry\Documents\GitHub\CSCI-212\Lab5b.MyintWin\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+=======
+	<item value="/Users/harrychan/eclipse-workspace/Project3.MyintWin" key="org.eclipse.jdt.ui.lastextjar"/>
+>>>>>>> 011b333ce94d182cdd0517720fb4db5de42b04c6
+>>>>>>> 461a8cecff4708d4133f2f112b049fca9023253a
 	<item value="3" key="CallHierarchyViewPart.orientation"/>
 	<item value="500" key="CallHierarchyViewPart.ratio1"/>
 	<item value="1" key="SearchScopeActionGroup.search_scope_type"/>
@@ -111,6 +119,17 @@
 	<section name="RenameInformationPopup">
 		<item value="2" key="snap_position"/>
 	</section>
+<<<<<<< HEAD
+	<section name="ClasspathContainerSelectionPage">
+		<item value="0" key="index"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+=======
+>>>>>>> 011b333ce94d182cdd0517720fb4db5de42b04c6
 	<section name="JavadocWizardDialog">
 		<item value="600" key="DIALOG_WIDTH"/>
 		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
